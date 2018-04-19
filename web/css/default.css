@@ -1,0 +1,165 @@
+body {
+    // Minimum 16x, and grows more slowly
+    // (half the rate of screen growth)
+    font-size: calc(16px + 0.5vw);
+
+    // Line-height based on font-size,
+    // with addition viewport-relative growth
+    line-height: calc(1.1em + 0.5vw);
+}
+input, legend, fieldset, label, button {
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+}
+.main-wrap {
+    background-image: url("../img/desktop_hdduotone_1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    /* position: absolute;
+    top: -4%;
+    left: -4%; */
+    width: 108%;
+    height: 108vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrap-heading-login{
+    width:70%;
+    max-width:1200px;
+}
+.main-wrap-heading{
+    width:50%;
+    float:left;
+}
+.main-wrap-login{
+    min-width: 250px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-comeon-text-login-form {
+    width:100%;
+    max-width:320px;
+}
+.wrap-comeon-text {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comeon-text {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+}
+.comeon-text-wrap-letter {
+    float:left;
+    padding:2px;
+    position:relative;
+    top:0;
+    left:0;
+}
+.letter {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+.c {
+    background-image:url("../img/font_c.png");
+    height: 32px;
+    width: 28px;
+}
+.o {
+    background-image:url("../img/font_o.png");
+    height: 32px;
+    width: 32px;
+}
+.m {
+    background-image:url("../img/font_m.png");
+    height: 32px;
+    width:41px;
+}
+.e {
+    background-image:url("../img/font_e.png");
+    height: 41px;
+    width: 31px;
+}
+.n {
+    background-image:url("../img/font_n.png");
+    height: 31px;
+    width: 28px;
+}
+.exclamationmark {
+    background-image:url("../img/font_exclamationmark.png");
+    height: 37px;
+    width: 8px;
+    position: relative;
+    bottom:5px;
+}
+.this-application-is{
+    font-family: 'MuseoSans-500',Helvetica,Arial,serif;
+    font-size: calc(8px + 0.15vw);
+    line-height: calc(10px + 0.15vw);
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    padding-left:5px;
+    padding-right:5px;
+}
+.this-is-comeon-kick {
+    font-family: 'Ahkio-Regular2', Helvetica, Arial, serif;
+    font-size: calc(48px + 2.5vw);
+    line-height: calc(50px + 2.5vw);
+    color: rgba(255, 255, 255, 1.0);
+    text-align: left;
+
+}
+.login-legend{
+    display: none;
+}
+.login-label{
+    width:100%;
+    display: block;
+    overflow: hidden;
+    border-radius:2px;
+}
+.login-fieldset{
+    width:100%;
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+}
+.login-input{
+    width:100%;
+    font-family: 'MuseoSans-500',Helvetica,Arial,serif;
+    font-size: calc(12px + 1.5vw);
+    line-height:  calc(18px + 1.5vw);
+    color: rgba(118,118,118,1.0);
+    border-radius:2px;
+    text-align: center;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(118,118,118,0.7);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(118,118,118,0.7);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(118,118,118,0.7);
+}
+.login-button{
+    width:100%;
+    background-color:#8FB326;
+    font-family: 'MuseoSans-500',Helvetica,Arial,serif;
+    font-size: calc(12px + 1.5vw);
+    line-height: calc(18px + 1.5vw);
+    color: rgba(118,118,118,1.0);
+    border-radius:2px;
+}

@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Backoffice 2.0</title>
 
+<head>
+    <title>Backoffice 2.0</title>
+    <link rel="shortcut icon" type=image/png href="https://75a60fd54738583029dc-1adecd08e8abf4684515984c2de89df9.ssl.cf3.rackcdn.com/static/comeon/img/favicon.ico">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=1440px, maximum-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" title="Default Style">
+    <link href="css/fonts.css" rel="stylesheet" title="Default Style">
+    <link href="css/default.css" rel="stylesheet" title="Default Style">
+    <meta name=author content="hacktallica">
 </head>
+
 <body>
 
-        <div>
-                <form>
-                    <fieldset>
-                        <legend class="rectangle-copy">username</legend>
-                        <label>
-                            <input id="username" type="text" name="username" placeholder="username">
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>password</legend>
-                        <label>
-                            <input id="password" type="password" name="password" placeholder="password">
-                        </label>
-                    </fieldset>
-                    <button id="submit" type="button">Login</button>
-                </form>
-                <div class="this-application-are">
-                    <p>This application are provided for use by authorized Comeon staff and its approved partners, use of this application are subject to all applicable Comeon policies, including information from any applicable Comeon handbooks. Any use of this
-                    application constitutes acknowledgment that the user is subject to all applicable policies. Any other use is prohibited.<br><br>Version: 1803-STAGING on server prod_be (mt-prod-bo02) Db: Master<br>From ip 155.4.19.32 on server mt-prod-bo02/192.168.146.89
-                    </p>
-                </div>
+<div class="main-wrap">
+    <div class="main-wrap-heading-login">
+        <div class="main-wrap-heading">
+            <h1 class="this-is-comeon-kick">This is ComeOn! kick-ass back office</h1>
         </div>
-
-                <script src="login-box.js"></script>
-
+        <div class="main-wrap-login">
+            <div class="wrap-comeon-text-login-form">
+                <div class="wrap-comeon-text">
+                    <ol class="comeon-text">
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter c"></div>
+                        </li>
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter o"></div>
+                        </li>
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter m"></div>
+                        </li>
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter e"></div>
+                        </li>
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter o"></div>
+                        </li>
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter n"></div>
+                        </li>
+                        <li class="comeon-text-wrap-letter">
+                            <div class="letter exclamationmark"></div>
+                        </li>
+                    </ol>
+                </div>
+                <form class="login-form">
+                    <fieldset class="login-fieldset">
+                        <legend class="login-legend">Username</legend>
+                        <label class="login-label">
+                            <input id="username" class="login-input" type="text" name="username" placeholder="Username">
+                        </label>
+                    </fieldset>
+                    <fieldset class="login-fieldset">
+                        <legend class="login-legend">Password</legend>
+                        <label class="login-label">
+                            <input id="password" class="login-input" type="password" name="password" placeholder="Password">
+                        </label>
+                    </fieldset>
+                    <fieldset class="login-fieldset">
+                        <button id="submit"  class="login-button" type="submit">Continue</button>
+                    </fieldset>
+                </form>
+                <div class="this-application-is">
+                    <p>This application is provided for use by authorized Comeon staff and its approved partners, use of this application are subject to all applicable Comeon policies, including information from any applicable Comeon handbooks. Any use of this
+                        application constitutes acknowledgment that the user is subject to all applicable policies. Any other use is prohibited.</p>
+                        <p>Version: 1803-STAGING on server prod_be (mt-prod-bo02) Db: Master</p>
+                        <p>From ip 155.4.19.32 on server mt-prod-bo02/192.168.146.89</p>
+                </div>
+            </div>
+        </div>
+    <div>
+<div>
+<script src="js/login-box.js"></script>
 </body>
-</html> 
+
+</html>
