@@ -6,9 +6,6 @@
     width: 100%;
     padding-left: 200px;
 }
-.wrap-dynamic-content {
-    border: 1px solid black;
-}
 .wrap-footer {
     border: 1px solid grey;
 }
@@ -210,4 +207,21 @@ td {
 }
 .u-hide {
     display: none;
+}
+.dynamic-content-title {
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
+    color: rgba(118, 118, 118, 1);
+    font-size: 32px;
+    line-height: 40px;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left:12px;
+}
+.wrap-dynamic-content {
+    position:relative;
+    top:128px;
+    left:200px;
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
+    font-size: 12px;
+    line-height: 22px;
 }
