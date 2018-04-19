@@ -17,6 +17,7 @@
                     window.location.href = "/web/homescreenresults.html";
 
                 }else {
+                    
                     passwordEl.value = "";
                     passwordEl.placeholder = "wrong user or password";
 
