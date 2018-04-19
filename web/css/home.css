@@ -1,120 +1,212 @@
-body {
-}
-header {
-    display:block;
-    overflow:hidden;
-    width:100%;
-    background: lawngreen;
-    border:1px solid black;
-}
-
-.comeon-logo {
-
-}
 .home-header {
-    border:1px solid red;
-}
-.wrap-searchbox {
-    border:1px solid green;
-}
-.wrap-logo-nav {
-    border:1px solid blue;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    padding-left: 200px;
 }
 .wrap-dynamic-content {
-    border:1px solid black;
+    border: 1px solid black;
 }
-.wrap-footer{
-    border:1px solid grey;
+.wrap-footer {
+    border: 1px solid grey;
 }
 
 /* the body tag has class of 'home' */
 
 /* logo up in the left corner */
-.home .wrap-comeon-text{
-    width:10%;
-    min-width: 240px;
+.home .wrap-logo {
+    width: 200px;
+    background-color: #282b33;
+    height: 64px;
 }
-.home .comeon-text {
-    float:left;
-    width: 240px;
-}
-.home .comeon-text-wrap-letter {
-    float: left;
-    padding: 2px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.home .letter {
+.home .logo {
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-}
-.home .c {
-    background-image: url('../img/font_c.png');
-    height: 32px;
-    width: 28px;
-}
-.home .o {
-    background-image: url('../img/font_o.png');
-    height: 32px;
-    width: 32px;
-}
-.home .o-green {
-    background-image: url('../img/font_o_green.png');
-    height: 32px;
-    width: 32px;
-}
-.home .m {
-    background-image: url('../img/font_m.png');
-    height: 32px;
-    width: 41px;
-}
-.home .e {
-    background-image: url('../img/font_e.png');
-    height: 41px;
-    width: 31px;
-}
-.home .n {
-    background-image: url('../img/font_n_green.png');
-    height: 31px;
-    width: 28px;
-}
-.home .exclamationmark {
-    background-image: url('../img/font_exclamationmark_green.png');
-    height: 37px;
-    width: 8px;
-    position: relative;
-    bottom: 5px;
+    background-position: center;
+    background-size: initial;
+    background-image: url('../img/logo.png');
 }
 
 /* username, time and logout button up right corner */
 .home .header-wrap-user-time-logout {
-    width: 400px;
-    float:right;
-    display:block;
+    width: 200px;
+    float: right;
+    display: block;
+    height: 64px;
+    padding:12px;
 }
 /* search input for player id */
 .home .wrap-searchbox {
-    clear:both;
+    /* clear: both;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: block;
+    height: 64px;
+    top: 64px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
 }
-/* navigation left */
-.home .nav-bar {
+.home .search-form {
+    left: 200px;
+    top: 0px;
+    height: 64px;
+    min-width: 320px;
+    max-width: 600px;
+    width: 75%;
+    position: absolute;
+}
+
+.search-legend {
+    display: none;
+}
+.search-label {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.search-fieldset {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    top: 12px;
+}
+.search-input {
+    width: 100%;
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
+    font-size: calc(12px);
+    line-height: calc(22px);
+    color: rgba(118, 118, 118, 1);
+    border-radius: 3px;
+    text-align: left;
+    border: solid;
+    border-color: #fff;
+    padding-left: 12px;
+}
+.icon-search {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+    background-image: url('../img/icon-search.png');
+}
+.header-username {
+    float:left;
+    padding-top:12px;
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
+    font-size: calc(12px);
+    line-height: calc(22px);
+}
+.logout-button {
+    background-color: #8fb326;
+    border: 2px solid #8fb326;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    float:right;
+}
+.icon-logout {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+    background-image: url('../img/icon-logout.png');
+}
+.search-button {
+    width: 30px;
+    height: 30px;
+    background-color: #41444f;
+    border-radius: 2px;
+    border: 2px solid #41444f;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+.icon-home {
+    background-image: url('../img/icon-home.png');
+}
+.icon-graphs {
+    background-image: url('../img/icon-graphs.png');
+}
+.icon-content {
+    background-image: url('../img/icon-content.png');
+}
+.icon-crm {
+    background-image: url('../img/icon-crm.png');
+}
+.icon-report {
+    background-image: url('../img/icon-report.png');
+}
+.nav-bar-title {
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
+    color: rgba(118, 118, 118, 1);
+}
+.nav-bar-menu-item {
+    width: 100%;
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: white;
+    text-align: left;
+    border: none;
+    border-color: #fff;
+    padding-left: 12px;
+    position: relative;
+    top:0;
+    left:0;
+}
+.nav-bar-sub-title {
+    padding-left: 32px;
+}
+.menu-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+    position: absolute;
 
 }
-/* homescreen results */
-table
-{
-border-collapse: collapse;
-border-spacing: 0px;
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(118, 118, 118, 0.7);
+    opacity: 1; /* Firefox */
 }
-table, th, td
-{
-padding: 5px;
-border: 1px solid black;
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(118, 118, 118, 0.7);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(118, 118, 118, 0.7);
+}
+
+/* navigation left */
+.home .nav-bar {
+    background-color: #41444f;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+/* homescreen results */
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+table,
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
 }
 .u-hide {
     display: none;
