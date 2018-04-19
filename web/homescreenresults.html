@@ -8,7 +8,6 @@
     <meta name=viewport content="width=1440px, maximum-scale=1.0">
     <link href="css/reset.css" rel="stylesheet" title="Default Style">
     <link href="css/fonts.css" rel="stylesheet" title="Default Style">
-    <link href="css/default.css" rel="stylesheet" title="Default Style">
     <link href="css/home.css" rel="stylesheet" title="Default Style">
     <meta name=author content="hacktallica">
 </head>
@@ -16,36 +15,22 @@
 <body class="home">
 
     <header class="home-header">
-        <div class="wrap-comeon-text">
-            <ol class="comeon-text">
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter c"></div>
-                </li>
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter o"></div>
-                </li>
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter m"></div>
-                </li>
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter e"></div>
-                </li>
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter o-green"></div>
-                </li>
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter n"></div>
-                </li>
-                <li class="comeon-text-wrap-letter">
-                    <div class="letter exclamationmark"></div>
-                </li>
-            </ol>
-        </div>
         <div class="header-wrap-user-time-logout">
             <h2 class="header-username">username asdfasdf</h2>
-            <time class="header-timestamp" datetime="2018-04-09T14:54">2018-04-09 14:54:46 CEST</time>
-            <button class="logout-button">logout</button>
+            <!-- <time class="header-timestamp" datetime="2018-04-09T14:54">2018-04-09 14:54:46 CEST</time> -->
+            <button class="logout-button icon-logout"></button>
         </div>
+        <section class="wrap-searchbox">
+            <form class="search-form">
+                <fieldset class="search-fieldset">
+                    <legend class="u-hide">Search:</legend>
+                    <label class="search-label" for="player-id-search">
+                    <input id="player-id-search" class="search-input" type="search" name="player-id-search" placeholder="Player id" maxlength="200" />
+                </label>
+                    <button class="search-button icon-search" type="submit" title="Search this website now"></button>
+                </fieldset>
+            </form>
+        </section>
     </header>
     <section class="wrap-searchbox">
         <input class="input-search" id="search-box" type="search" placeholder="Player identification" />
@@ -53,26 +38,27 @@
     </section>
 
     <nav class="nav-bar">
+        <div class="wrap-logo logo"></div>
         <h3 class="nav-bar-title">Menu</h3>
         <ul>
-            <li><span class="icon-home"></span>
+            <li class="nav-bar-menu-item"><span class="menu-icon icon-home"></span>
                 <p class="nav-bar-sub-title">Home</p>
             </li>
-            <li><span class="icon-graphs"></span>
+            <li class="nav-bar-menu-item"><span class="menu-icon icon-graphs"></span>
                 <p class="nav-bar-sub-title">graphs</p>
             </li>
-            <li><span class="icon-content"></span>
+            <li class="nav-bar-menu-item"><span class="menu-icon icon-content"></span>
                 <p class="nav-bar-sub-title">content</p>
             </li>
-            <li><span class="icon-crm"></span>
+            <li class="nav-bar-menu-item"><span class="menu-icon icon-crm"></span>
                 <p class="nav-bar-sub-title">crm</p>
             </li>
-            <li><span class="icon-report"></span>
+            <li class="nav-bar-menu-item"><span class="menu-icon icon-report"></span>
                 <p class="nav-bar-sub-title">report</p>
             </li>
-            <li><span class="icon-search"></span>
+            <li class="nav-bar-menu-item"><span class="menu-icon icon-search"></span>
                 <p class="nav-bar-sub-title">search</p>
-                <ul class="nav-bar-search-menu">
+                <!-- <ul class="nav-bar-search-menu">
                     <li>
                         <p class="nav-bar-search-menu-title">Transaction search</p>
                     </li>
@@ -85,14 +71,15 @@
                     <li>
                         <p class="nav-bar-search-menu-title">Product User search</p>
                     </li>
-                </ul>
+                </ul> -->
             </li>
         </ul>
     </nav>
 
-    <h1 class="dynamic-content-title">Player home screen result</h1>
     <main class="wrap-dynamic-content">
         <table id="player-result">
+        <h1 class="dynamic-content-title">Player home screen result</h1>
+        <table>
             <colgroup span="10"></colgroup>
             <tr>
                 <th>PID</th>
@@ -110,7 +97,7 @@
 
 
     </main>
-
+<!--
     <footer class="wrap-footer">
         <div class="this-application-is">
             <p>This application is provided for use by authorized Comeon staff and its approved partners, use of this application are subject to all applicable Comeon policies, including information from any applicable Comeon handbooks. Any use of this application
@@ -118,7 +105,7 @@
             <p>Version: 1803-STAGING on server prod_be (mt-prod-bo02) Db: Master</p>
             <p>From ip 155.4.19.32 on server mt-prod-bo02/192.168.146.89</p>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="js/player-search.js"></script>
 </body>
