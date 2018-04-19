@@ -2,7 +2,7 @@
 
     var PLAYER_SEARCH_ENDPOINT = "/KjBackend/rest/player/find/";
 
-    var searchEl = document.getElementById('search-box');
+    var searchEl = document.getElementById('player-id-search');
     var button = document.getElementById('search-button');
 
 

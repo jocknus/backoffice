@@ -27,15 +27,11 @@
                     <label class="search-label" for="player-id-search">
                     <input id="player-id-search" class="search-input" type="search" name="player-id-search" placeholder="Player id" maxlength="200" />
                 </label>
-                    <button class="search-button icon-search" type="submit" title="Search this website now"></button>
+                    <button id="search-button" class="search-button icon-search" type="submit" title="Search this website now"></button>
                 </fieldset>
             </form>
         </section>
     </header>
-    <section class="wrap-searchbox">
-        <input class="input-search" id="search-box" type="search" placeholder="Player identification" />
-        <button class="icon-search" id="search-button">Search</button>
-    </section>
 
     <nav class="nav-bar">
         <div class="wrap-logo logo"></div>
@@ -77,9 +73,8 @@
     </nav>
 
     <main class="wrap-dynamic-content">
-        <table id="player-result">
         <h1 class="dynamic-content-title">Player home screen result</h1>
-        <table>
+        <table id="player-result">
             <colgroup span="10"></colgroup>
             <tr>
                 <th>PID</th>
@@ -89,7 +84,7 @@
                 <th>First name</th>
                 
             </tr>
-           
+            
         </table>
 
 
