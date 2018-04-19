@@ -14,8 +14,9 @@
                 
                 if (httpRequest.status == 200) {
                     var data = JSON.parse(httpRequest.responseText);
-                    console.log(data);
                     
+                    var table = document.getElementById('player-result');
+                    table.tBodies[0].innerHTML = "";    
                    
                     data.forEach(function (s){
                         // Id
