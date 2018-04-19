@@ -48,8 +48,8 @@
         </div>
     </header>
     <section class="wrap-searchbox">
-        <input class="input-search" type="search" placeholder="Player identification" />
-        <button class="icon-search">Search</button>
+        <input class="input-search" id="search-box" type="search" placeholder="Player identification" />
+        <button class="icon-search" id="search-button">Search</button>
     </section>
 
     <nav class="nav-bar">
@@ -92,7 +92,7 @@
 
     <h1 class="dynamic-content-title">Player home screen result</h1>
     <main class="wrap-dynamic-content">
-        <table>
+        <table id="player-result">
             <colgroup span="10"></colgroup>
             <tr>
                 <th>PID</th>
@@ -100,36 +100,9 @@
                 <th>Player status id</th>
                 <th>Site_id</th>
                 <th>First name</th>
-                <th>Last name</th>
-                <th>Email</th>
-                <th>Last Login</th>
-                <th>Mobile</th>
-                <th>Notes</th>
+                
             </tr>
-            <tr>
-                <td>117</td>
-                <td>andreash/td>
-                    <td>OPEN</td>
-                    <td>ComeOn!</td>
-                    <td>Andreas</td>
-                    <td>Holmström</td>
-                    <td>andreas.h@netens.com</td>
-                    <td>2010-07-30</td>
-                    <td>0707070707</td>
-                    <td>Lorem Ipsum</td>
-            </tr>
-            <tr>
-                <td>117</td>
-                <td>andreash/td>
-                    <td>OPEN</td>
-                    <td>ComeOn!</td>
-                    <td>Andreas</td>
-                    <td>Holmström</td>
-                    <td>andreas.h@netens.com</td>
-                    <td>2010-07-30</td>
-                    <td>0707070707</td>
-                    <td>Lorem Ipsum</td>
-            </tr>
+           
         </table>
 
 
@@ -147,7 +120,7 @@
         </div>
     </footer>
 
-    <script src="js/login-box.js"></script>
+    <script src="js/player-search.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 (function () {
 
-    var LOGIN_ENDPOINT = "/Login/";
+    var LOGIN_ENDPOINT = "/KjBackend/rest/login/auth";
 
     var usernameEl = document.getElementById('username');
     var passwordEl = document.getElementById('password');
@@ -14,7 +14,7 @@
             if (httpRequest.readyState == XMLHttpRequest.DONE) {
                 console.log(httpRequest.responseText);
                 if (httpRequest.status == 200) {
-                    window.location.href = "/app";
+                    window.location.href = "/web/homescreenresults.html";
 
                 }else {
                     passwordEl.value = "";
@@ -25,7 +25,7 @@
         }
         httpRequest.open('POST', LOGIN_ENDPOINT,true);
         httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        var requestParameters = 'flow=Login1&FORM_USERNAME=' + encodeURIComponent(usernameEl.value) + '&FORM_PASSWORD=' + encodeURIComponent(passwordEl.value);
+        var requestParameters = 'user=' + encodeURIComponent(usernameEl.value) + '&credentials=' + encodeURIComponent(passwordEl.value);
         httpRequest.send(requestParameters);
 
     });
