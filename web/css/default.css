@@ -8,9 +8,6 @@ body {
     line-height: calc(1.1em + 0.5vw);
 }
 input, legend, fieldset, label, button {
-    box-sizing: border-box;
-    border:none;
-    outline:none;
 }
 .main-wrap {
     background-image: url("../img/desktop_hdduotone_1.png");
@@ -125,7 +122,7 @@ input, legend, fieldset, label, button {
     width:100%;
     display: block;
     overflow: hidden;
-    border-radius:2px;
+    border-radius: 3px;
 }
 .login-fieldset{
     width:100%;
@@ -133,14 +130,17 @@ input, legend, fieldset, label, button {
     overflow: hidden;
     padding: 5px;
 }
-.login-input{
-    width:100%;
+.login-input {
+    width: 100%;
     font-family: 'MuseoSans-500',Helvetica,Arial,serif;
-    font-size: calc(12px + 1.5vw);
-    line-height:  calc(18px + 1.5vw);
+    font-size: calc(12px + 0.2vw);
+    line-height: calc(22px + 0.3vw);
     color: rgba(118,118,118,1.0);
-    border-radius:2px;
-    text-align: center;
+    border-radius: 3px;
+    text-align: left;
+    border: solid;
+    border-color: #fff;
+    padding-left: 12px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(118,118,118,0.7);
@@ -154,12 +154,17 @@ input, legend, fieldset, label, button {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: rgba(118,118,118,0.7);
 }
-.login-button{
-    width:100%;
-    background-color:#8FB326;
+.login-button {
+    width: 100%;
+    background-color: #8FB326;
     font-family: 'MuseoSans-500',Helvetica,Arial,serif;
-    font-size: calc(12px + 1.5vw);
-    line-height: calc(18px + 1.5vw);
-    color: rgba(118,118,118,1.0);
-    border-radius:2px;
+    font-size: calc(12px + 0.2vw);
+    line-height: calc(22px + 0.3vw);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: solid;
+    border-color: #8FB326;
+    margin-bottom: 12px;
+       box-shadow: 0 1px 0 0 #3a632c;
+}
 }
