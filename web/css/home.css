@@ -1,0 +1,121 @@
+body {
+}
+header {
+    display:block;
+    overflow:hidden;
+    width:100%;
+    background: lawngreen;
+    border:1px solid black;
+}
+
+.comeon-logo {
+
+}
+.home-header {
+    border:1px solid red;
+}
+.wrap-searchbox {
+    border:1px solid green;
+}
+.wrap-logo-nav {
+    border:1px solid blue;
+}
+.wrap-dynamic-content {
+    border:1px solid black;
+}
+.wrap-footer{
+    border:1px solid grey;
+}
+
+/* the body tag has class of 'home' */
+
+/* logo up in the left corner */
+.home .wrap-comeon-text{
+    width:10%;
+    min-width: 240px;
+}
+.home .comeon-text {
+    float:left;
+    width: 240px;
+}
+.home .comeon-text-wrap-letter {
+    float: left;
+    padding: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.home .letter {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+.home .c {
+    background-image: url('../img/font_c.png');
+    height: 32px;
+    width: 28px;
+}
+.home .o {
+    background-image: url('../img/font_o.png');
+    height: 32px;
+    width: 32px;
+}
+.home .o-green {
+    background-image: url('../img/font_o_green.png');
+    height: 32px;
+    width: 32px;
+}
+.home .m {
+    background-image: url('../img/font_m.png');
+    height: 32px;
+    width: 41px;
+}
+.home .e {
+    background-image: url('../img/font_e.png');
+    height: 41px;
+    width: 31px;
+}
+.home .n {
+    background-image: url('../img/font_n_green.png');
+    height: 31px;
+    width: 28px;
+}
+.home .exclamationmark {
+    background-image: url('../img/font_exclamationmark_green.png');
+    height: 37px;
+    width: 8px;
+    position: relative;
+    bottom: 5px;
+}
+
+/* username, time and logout button up right corner */
+.home .header-wrap-user-time-logout {
+    width: 400px;
+    float:right;
+    display:block;
+}
+/* search input for player id */
+.home .wrap-searchbox {
+    clear:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* navigation left */
+.home .nav-bar {
+
+}
+/* homescreen results */
+table
+{
+border-collapse: collapse;
+border-spacing: 0px;
+}
+table, th, td
+{
+padding: 5px;
+border: 1px solid black;
+}
+.u-hide {
+    display: none;
+}

@@ -1,16 +1,9 @@
 body {
-    // Minimum 16x, and grows more slowly
-    // (half the rate of screen growth)
     font-size: calc(16px + 0.5vw);
-
-    // Line-height based on font-size,
-    // with addition viewport-relative growth
     line-height: calc(1.1em + 0.5vw);
 }
-input, legend, fieldset, label, button {
-}
 .main-wrap {
-    background-image: url("../img/desktop_hdduotone_1.png");
+    background-image: url('../img/desktop_hdduotone_1.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -24,29 +17,29 @@ input, legend, fieldset, label, button {
     justify-content: center;
     align-items: center;
 }
-.main-wrap-heading-login{
-    width:70%;
-    max-width:1200px;
+.main-wrap-heading-login {
+    width: 70%;
+    max-width: 1200px;
 }
-.main-wrap-heading{
-    width:50%;
-    float:left;
+.main-wrap-heading {
+    width: 50%;
+    float: left;
 }
-.main-wrap-login{
+.main-wrap-login {
     min-width: 250px;
-    width:50%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .wrap-comeon-text-login-form {
-    width:100%;
-    max-width:320px;
+    width: 100%;
+    max-width: 320px;
 }
 .wrap-comeon-text {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .comeon-text {
     margin-left: auto;
@@ -55,11 +48,11 @@ input, legend, fieldset, label, button {
     overflow: hidden;
 }
 .comeon-text-wrap-letter {
-    float:left;
-    padding:2px;
-    position:relative;
-    top:0;
-    left:0;
+    float: left;
+    padding: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 .letter {
     background-repeat: no-repeat;
@@ -67,104 +60,105 @@ input, legend, fieldset, label, button {
     background-size: contain;
 }
 .c {
-    background-image:url("../img/font_c.png");
+    background-image: url('../img/font_c.png');
     height: 32px;
     width: 28px;
 }
 .o {
-    background-image:url("../img/font_o.png");
+    background-image: url('../img/font_o.png');
     height: 32px;
     width: 32px;
 }
 .m {
-    background-image:url("../img/font_m.png");
+    background-image: url('../img/font_m.png');
     height: 32px;
-    width:41px;
+    width: 41px;
 }
 .e {
-    background-image:url("../img/font_e.png");
+    background-image: url('../img/font_e.png');
     height: 41px;
     width: 31px;
 }
 .n {
-    background-image:url("../img/font_n.png");
+    background-image: url('../img/font_n.png');
     height: 31px;
     width: 28px;
 }
 .exclamationmark {
-    background-image:url("../img/font_exclamationmark.png");
+    background-image: url('../img/font_exclamationmark.png');
     height: 37px;
     width: 8px;
     position: relative;
-    bottom:5px;
+    bottom: 5px;
 }
-.this-application-is{
-    font-family: 'MuseoSans-500',Helvetica,Arial,serif;
+.this-application-is {
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
     font-size: calc(8px + 0.15vw);
     line-height: calc(10px + 0.15vw);
     color: rgba(255, 255, 255, 1);
     text-align: left;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .this-is-comeon-kick {
     font-family: 'Ahkio-Regular2', Helvetica, Arial, serif;
     font-size: calc(48px + 2.5vw);
     line-height: calc(50px + 2.5vw);
-    color: rgba(255, 255, 255, 1.0);
+    color: rgba(255, 255, 255, 1);
     text-align: left;
-
 }
-.login-legend{
+.login-legend {
     display: none;
 }
-.login-label{
-    width:100%;
+.login-label {
+    width: 100%;
     display: block;
     overflow: hidden;
     border-radius: 3px;
 }
-.login-fieldset{
-    width:100%;
+.login-fieldset {
+    width: 100%;
     display: block;
     overflow: hidden;
     padding: 5px;
 }
 .login-input {
     width: 100%;
-    font-family: 'MuseoSans-500',Helvetica,Arial,serif;
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
     font-size: calc(12px + 0.2vw);
     line-height: calc(22px + 0.3vw);
-    color: rgba(118,118,118,1.0);
+    color: rgba(118, 118, 118, 1);
     border-radius: 3px;
     text-align: left;
     border: solid;
     border-color: #fff;
     padding-left: 12px;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgba(118,118,118,0.7);
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(118, 118, 118, 0.7);
     opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgba(118,118,118,0.7);
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(118, 118, 118, 0.7);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgba(118,118,118,0.7);
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(118, 118, 118, 0.7);
 }
 .login-button {
     width: 100%;
-    background-color: #8FB326;
-    font-family: 'MuseoSans-500',Helvetica,Arial,serif;
+    background-color: #8fb326;
+    font-family: 'MuseoSans-500', Helvetica, Arial, serif;
     font-size: calc(12px + 0.2vw);
     line-height: calc(22px + 0.3vw);
     color: rgb(255, 255, 255);
     border-radius: 3px;
     border: solid;
-    border-color: #8FB326;
+    border-color: #8fb326;
     margin-bottom: 12px;
-       box-shadow: 0 1px 0 0 #3a632c;
-}
+    box-shadow: 0 1px 0 0 #3a632c;
 }

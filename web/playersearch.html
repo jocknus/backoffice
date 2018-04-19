@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Backoffice 2.0</title>
+    <link rel="shortcut icon" type=image/png href="https://75a60fd54738583029dc-1adecd08e8abf4684515984c2de89df9.ssl.cf3.rackcdn.com/static/comeon/img/favicon.ico">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=1440px, maximum-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" title="Default Style">
+    <link href="css/fonts.css" rel="stylesheet" title="Default Style">
+    <link href="css/default.css" rel="stylesheet" title="Default Style">
+    <link href="css/home.css" rel="stylesheet" title="Default Style">
+    <meta name=author content="hacktallica">
+</head>
+
+<body class="home">
+
+    <header class="home-header">
+        <div class="wrap-comeon-text">
+            <ol class="comeon-text">
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter c"></div>
+                </li>
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter o"></div>
+                </li>
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter m"></div>
+                </li>
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter e"></div>
+                </li>
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter o-green"></div>
+                </li>
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter n"></div>
+                </li>
+                <li class="comeon-text-wrap-letter">
+                    <div class="letter exclamationmark"></div>
+                </li>
+            </ol>
+        </div>
+        <div class="header-wrap-user-time-logout">
+            <h2 class="header-username">username asdfasdf</h2>
+            <time class="header-timestamp" datetime="2018-04-09T14:54">2018-04-09 14:54:46 CEST</time>
+            <button class="logout-button">logout</button>
+        </div>
+    </header>
+    <section class="wrap-searchbox">
+        <input class="input-search" type="search" placeholder="Player identification" />
+        <span class="icon-search">icon</span>
+    </section>
+
+    <nav class="nav-bar">
+        <h3 class="nav-bar-title">Menu</h3>
+        <ul>
+            <li><span class="icon-home"></span>
+                <p class="nav-bar-sub-title">Home</p>
+            </li>
+            <li><span class="icon-graphs"></span>
+                <p class="nav-bar-sub-title">graphs</p>
+            </li>
+            <li><span class="icon-content"></span>
+                <p class="nav-bar-sub-title">content</p>
+            </li>
+            <li><span class="icon-crm"></span>
+                <p class="nav-bar-sub-title">crm</p>
+            </li>
+            <li><span class="icon-report"></span>
+                <p class="nav-bar-sub-title">report</p>
+            </li>
+            <li><span class="icon-search"></span>
+                <p class="nav-bar-sub-title">search</p>
+                <ul class="nav-bar-search-menu">
+                    <li>
+                        <p class="nav-bar-search-menu-title">Transaction search</p>
+                    </li>
+                    <li>
+                        <p class="nav-bar-search-menu-title">Player search</p>
+                    </li>
+                    <li>
+                        <p class="nav-bar-search-menu-title">Microgaming search</p>
+                    </li>
+                    <li>
+                        <p class="nav-bar-search-menu-title">Product User search</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="dynamic-content-title">Player search report</h1>
+    <main class="wrap-dynamic-content">
+
+        <form class="player-search-form">
+            <fieldset>
+                <legend>input name</legend>
+                <label>
+                    <input id="player-search-form-input-name" type="text" name="input-name">
+                </label>
+                <legend>user name</legend>
+                <label>
+                    <input id="player-search-form-user-name" type="text" name="user-name">
+                </label>
+                <legend>first name</legend>
+                <label>
+                    <input id="player-search-form-first-name" type="text" name="first-name">
+                </label>
+                <legend>last name</legend>
+                <label>
+                    <input id="player-search-form-last-name" type="text" name="last-name">
+                </label>
+                <legend>email</legend>
+                <label>
+                    <input type='email' id="player-search-form-email" type="text" name="email">
+                </label>
+                <legend>Country ID</legend>
+                <label>
+        			<select>
+        				<option value="Sweden">Sweden</option>
+        				<option value="India">India</option>
+        				<option value="France">France</option>
+        				<option value="USA">USA</option>
+        			</select>
+                </label>
+                <legend>Site ID/FID</legend>
+                <label>
+        			<select>
+        				<option value="Sweden">Sweden</option>
+        				<option value="India">India</option>
+        				<option value="France">France</option>
+        				<option value="USA">USA</option>
+        			</select>
+                </label>
+                <legend>phone</legend>
+                <label>
+                    <input type='number' id="player-search-form-phone" type="text" name="phone">
+                </label>
+                <legend>adress</legend>
+                <label>
+                    <input type='text' id="player-search-form-adress" type="text" name="adress">
+                </label>
+                <legend>postal code</legend>
+                <label>
+                    <input type='text' id="player-search-form-postalcode" type="text" name="postalcode">
+                </label>
+                <legend>city</legend>
+                <label>
+                    <input type='text' id="player-search-form-city" type="text" name="city">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>registration-start-date</legend>
+                <label>
+                    <input id="player-search-form-input-registration-start-date" type="text" name="input-registration-start-date">
+                </label>
+                <legend>registration-end-date</legend>
+                <label>
+                    <input id="player-search-form-input-registration-end-date" type="text" name="input-registration-end-date">
+                </label>
+                <legend>Player status</legend>
+                <label>
+        			<select>
+        				<option value="CLOSED_APP_FRAUD">CLOSED_APP_FRAUD</option>
+        			</select>
+                </label>
+                <legend>Last deposit start date</legend>
+                <label>
+                    <input type='date' id="player-search-form-input-deposit-start-date"  name="input-deposit-start-date">
+                </label>
+                <legend>Last deposit end date</legend>
+                <label>
+                    <input type='date' id="player-search-form-input-deposit-end-date"  name="input-deposit-end-date">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Player info</legend>
+                <label>
+                        <input id="player-search-form-player-info" type="text" name="player-info">
+                    </label>
+                <legend>Player info manual</legend>
+                    <label>
+                        <select>
+                            <option value="Sweden">Sweden</option>
+                            <option value="India">India</option>
+                            <option value="France">France</option>
+                            <option value="USA">USA</option>
+                        </select>account-id
+                    </label>
+                <legend>Account ID</legend>
+                <label>
+                        <input id="player-search-form-account-id" type="text" name="user-name">
+                    </label>
+                <legend>first name</legend>
+                <label>
+                        <input id="player-search-form-first-name" type="text" name="first-name">
+                    </label>
+                <legend>last name</legend>
+                <label>
+                        <input id="player-search-form-last-name" type="text" name="last-name">
+                    </label>
+                <legend>email</legend>
+                <label>
+                        <input type='email' id="player-search-form-email" type="text" name="email">
+                    </label>
+                <legend>Site ID/FID</legend>
+                <label>
+                        <select>
+                            <option value="Sweden">Sweden</option>
+                            <option value="India">India</option>
+                            <option value="France">France</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </label>
+                <legend>phone</legend>
+                <label>
+                        <input type='number' id="player-search-form-phone" type="text" name="phone">
+                    </label>
+                <legend>adress</legend>
+                <label>
+                        <input type='text' id="player-search-form-adress" type="text" name="adress">
+                    </label>
+                <legend>postal code</legend>
+                <label>
+                        <input type='text' id="player-search-form-postalcode" type="text" name="postalcode">
+                    </label>
+                <legend>city</legend>
+                <label>
+                        <input type='text' id="player-search-form-city" type="text" name="city">
+                    </label>
+            </fieldset>
+            <button id="submit" class="player-search-button" type="submit">Search</button>
+        </form>
+
+
+
+
+
+    </main>
+
+    <footer class="wrap-footer">
+        <div class="this-application-is">
+            <p>This application is provided for use by authorized Comeon staff and its approved partners, use of this application are subject to all applicable Comeon policies, including information from any applicable Comeon handbooks. Any use of this application
+                constitutes acknowledgment that the user is subject to all applicable policies. Any other use is prohibited.</p>
+            <p>Version: 1803-STAGING on server prod_be (mt-prod-bo02) Db: Master</p>
+            <p>From ip 155.4.19.32 on server mt-prod-bo02/192.168.146.89</p>
+        </div>
+    </footer>
+
+    <script src="js/login-box.js"></script>
+</body>
+
+</html>
