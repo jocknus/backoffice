@@ -17,15 +17,18 @@
                     
                     var table = document.getElementById('player-result');
                     table.setAttribute("border","0");
-                    table.tBodies[0].innerHTML = "<tr><th>PID</th><th>Username</th><th>Player status id</th><th>Site_id</th><th>First name</th></tr>";    
+                    table.tBodies[0].innerHTML = "<tr><th>PID</th><th>Username</th><th>Site</th><th>Email</th><th>Last login</th><th>Created</th></tr>";    
                    
                     data.forEach(function (s){
                         // Id
                         var row = document.createElement("tr");
-                        
+                    
                         var tdId = document.createElement("td");
+                        tdId.appendChild(document.createTextNode(s.id))
                         tdId.setAttribute('align', 'center');
-                        tdId.appendChild(document.createTextNode(s.id));
+                        tdId.addEventListener('click', function(e) {
+                            
+                        });
                         row.appendChild(tdId);
                         
                         var tdUsername = document.createElement("td");
@@ -47,6 +50,11 @@
                         tdLastlogin.setAttribute('align', 'center');
                         tdLastlogin.appendChild(document.createTextNode(s.lastlogin));
                         row.appendChild(tdLastlogin);
+
+                        var tdRegDate = document.createElement("td");
+                        tdRegDate.setAttribute('align', 'center');
+                        tdRegDate.appendChild(document.createTextNode(s.created));
+                        row.appendChild(tdRegDate);
 
                         
                         
