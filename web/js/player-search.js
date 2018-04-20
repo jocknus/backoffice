@@ -27,7 +27,7 @@
                         tdId.appendChild(document.createTextNode(s.id))
                         tdId.setAttribute('align', 'center');
                         tdId.addEventListener('click', function(e) {
-                            window.open("http://local.comeon.cleverdolphin.se:8080/KjBackend/fc?flow=130&kjform=PL_PICK&scrto=PL_PICK&PL_PID_IDENT=1",'_blank');    
+                            window.open("/KjBackend/fc?flow=130&kjform=PL_PICK&scrto=PL_PICK&PL_PID_IDENT="+s.id,'_blank');    
                         });
                         row.appendChild(tdId);
                         
