@@ -24,11 +24,14 @@
                 }
             }
         }
-        httpRequest.open('POST', LOGIN_ENDPOINT,true);
-        httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        //var requestParameters = 'user=' + usernameEl.value + '&credentials=' + passwordEl.value;
+        var requestParameters = 'user=' + encodeURIComponent(usernameEl.value) + '&credentials=' + encodeURIComponent(passwordEl.value);
+        httpRequest.open('POST', LOGIN_ENDPOINT+"?"+requestParameters,true);
+        //httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         //var requestParameters = 'user=' + encodeURIComponent(usernameEl.value) + '&credentials=' + encodeURIComponent(passwordEl.value);
-        var requestParameters = 'user=' + usernameEl.value + '&credentials=' + passwordEl.value;
-        httpRequest.send(requestParameters);
+        //var requestParameters = 'user=' + usernameEl.value + '&credentials=' + passwordEl.value;
+        //httpRequest.send(requestParameters);
+        httpRequest.send();
 
     });
 })();
