@@ -14,7 +14,9 @@
             if (httpRequest.readyState == XMLHttpRequest.DONE) {
                 console.log(httpRequest.responseText);
                 if (httpRequest.status == 200) {
-                    window.location.href = "/KjBackend/web/homescreenresults.html";
+                    window.location.href = "homescreenresults.html";
+
+                    
 
                 }else {
                     
